@@ -152,7 +152,6 @@ function printOutput(cmd, content) {
 
 function init() {
     printOutput('whoami', data['whoami']);
-    printOutput('cat skills.txt', data['cat skills.txt']);
     
     buttons.forEach(btn => {
         btn.addEventListener('click', (e) => {

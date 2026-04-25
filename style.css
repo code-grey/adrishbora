@@ -48,6 +48,7 @@ body {
     max-width: 1000px;
     margin: 0 auto;
     height: 100vh;
+    height: 100dvh;
     display: flex;
     flex-direction: column;
     padding: 2rem;
@@ -77,6 +78,7 @@ body {
 
 .terminal-body {
     flex-grow: 1;
+    min-height: 0;
     overflow-y: auto;
     padding-right: 10px;
     margin-bottom: 1rem;
