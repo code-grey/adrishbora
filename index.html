@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="https://api.iconify.design/lucide:terminal.svg?color=%2300e5ff" />
+    <title>Adrish Bora | Terminal</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="boot-screen">
+    <div class="boot-text">INIT: Adrish OS v1.0
+Mounting kernel module... [ OK ]
+Initializing Xomoi Edge Node... [ OK ]
+Bypassing mainframes... [ DONE ]
+Establishing secure uplink... [ OK ]
+
+<span style="color: var(--highlight); text-shadow: 0 0 10px var(--highlight);">ACCESS GRANTED.</span></div>
+</div>
+<div class="scanlines"></div>
+<div class="crt-overlay"></div>
+
+<div class="terminal-container">
+    <header class="terminal-header">
+        <div class="header-content" style="display: flex; justify-content: space-between; align-items: flex-end;">
+            <div>
+                <h1>root@adrish-sys:~# <span class="blink">_</span></h1>
+                <div class="sys-info">
+                    <span>OS: Arch Linux x86_64</span>
+                    <span>Host: Cyberdeck v9.2</span>
+                    <span>Kernel: Custom (Staging)</span>
+                    <span>Uptime: 99.99%</span>
+                </div>
+            </div>
+            <div class="header-art" title="System Status: Active">
+                <div class="spinner"></div>
+            </div>
+        </div>
+    </header>
+        <div class="terminal-body" id="terminal-output">
+            <!-- Output will be injected here by JS -->
+        </div>
+
+        <div class="command-line">
+            <span class="prompt">guest@adrish-sys:~$</span>
+            <div class="nav-links">
+                <button class="cmd-btn" data-cmd="whoami">whoami</button>
+                <button class="cmd-btn" data-cmd="cat skills.txt">skills</button>
+                <button class="cmd-btn" data-cmd="ls projects/">projects</button>
+                <button class="cmd-btn" data-cmd="cat experience.log">experience</button>
+                <button class="cmd-btn" data-cmd="cat oss.patch">oss</button>
+                <button class="cmd-btn" data-cmd="clear">clear</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
